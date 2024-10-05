@@ -1,0 +1,86 @@
+body{
+    background-image: url("img/background.jpg");
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+    
+   font-family: 'Times New Roman', Times, serif;
+   display:grid;
+   grid-template-columns: 200px 800px 200px;
+   grid-template-rows: 100px repeat(3,120px) 240px;
+   grid-template-areas: 
+   "header header header"
+   "about main sidebar1"
+   "about main sidebar2"
+   "about main sidebar3"
+   "about main .";
+   column-gap: 5px;
+   row-gap: 5px;
+
+   padding:10px;
+
+   margin: auto;
+   width: 1200px;
+}
+#container{
+    grid-area: main;
+    position: relative;
+    
+    border: solid black 5px;
+    
+}
+
+
+#cerealHeader{
+    display: flex;
+    text-shadow:rgb(255, 255, 255) 1px 1px;
+    background-color: bisque;
+    
+    grid-area: header;
+    border: solid black 5px;
+    
+    align-items: center;
+    justify-content:center;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+#about{
+    text-shadow:rgb(255, 255, 255) 1px 1px;
+    background-color: bisque;
+    grid-area: about;
+    
+    border: solid black 5px;
+    
+
+    
+}
+#aboutHeader{
+    
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+    
+    
+}
+#aboutContent{
+    line-height: 1.3;
+}
+
+
+.sideItem{
+    background-image: url("/img/background.jpg");
+    display: flex;
+    
+    
+    border: solid rgb(0, 0, 0) 5px;
+    text-shadow:rgb(255, 255, 255) 1px 1px;
+    background-color: bisque;
+    
+    height: 110px;
+
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; 
+}
+

@@ -1,0 +1,118 @@
+body{
+    background-image: url("img/background.jpg");
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+    display:grid;
+    grid-template-columns: 330px 330px 330px 200px;
+    grid-template-rows: 100px repeat(3,120px) 240px;
+    grid-template-areas: 
+    "header header header header"
+    "quiz quiz  quiz sidebar"
+    "quiz quiz quiz ."
+    "quiz quiz quiz ."
+    "answer1 answer2 answer3 .";
+    column-gap: 5px;
+    row-gap: 5px;
+ 
+    padding:10px;
+ 
+    margin: auto;
+    width: 1200px;
+}
+#questionContainer{
+    
+    text-shadow:rgb(255, 255, 255) 1px 1px;
+    background-color: bisque;
+    grid-area: quiz;
+    
+    border: solid black 5px;
+    
+    
+}
+.score{
+    display: inline-flex;
+    align-items: center;
+    font-size: 3em;
+    justify-content:center;
+    align-items: center;
+    
+}
+#question{
+    display: flex;
+    align-items: center;
+    font-size: 3em;
+    justify-content:center;
+    align-items: center;
+    
+}
+.answer{
+    cursor: pointer;
+    display: flex;
+    text-shadow:rgb(255, 255, 255) 1px 1px;
+    background-color: bisque;
+    
+    border: solid black 5px;
+
+    font-size: 3em;
+    
+    justify-content:center;
+    align-items: center;
+}
+
+
+#answerbox1{
+    grid-area: answer1;
+    
+    
+}
+.answer:hover{
+    background-color: rgb(205, 255, 196);
+}
+
+
+#answerbox2{
+    grid-area: answer2;
+    
+    
+    
+}
+
+
+
+#answerbox3{
+    grid-area: answer3;
+    
+    
+    
+}
+
+
+#header{
+    display: flex;
+    text-shadow:rgb(255, 255, 255) 1px 1px;
+    background-color: bisque;
+    
+    grid-area: header;
+    border: solid black 5px;
+    
+    align-items: center;
+    justify-content:center;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+.sideItem{
+    
+    
+    display: flex;
+    height:110px;
+   
+
+    border: solid rgb(0, 0, 0) 5px;
+    text-shadow:rgb(255, 255, 255) 1px 1px;
+    background-color: bisque;
+    justify-content:center;
+    align-items: center;
+    cursor: pointer; 
+}

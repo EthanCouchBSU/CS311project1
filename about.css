@@ -1,0 +1,64 @@
+body{
+    background-image: url("img/background.jpg");
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+    font-family: 'Times New Roman', Times, serif;
+    display:grid;
+    grid-template-columns: 1000px auto;
+    grid-template-rows: 100px repeat(2,120px) 360px;
+    grid-template-areas: 
+    "header header"
+    "main sidebar"
+    "main sidebar"
+    "main ."
+    "main .";
+    column-gap: 5px;
+    row-gap: 5px;
+    padding:10px;
+ 
+    margin: auto;
+    width: 1200px;
+    
+}
+#bodyText{
+    text-shadow:rgb(255, 255, 255) 1px 1px;
+    background-color: bisque;
+    grid-area: main;
+    
+    border: solid black 5px;
+    text-align: center;
+    font-size: larger;
+    
+}
+#header{
+    display: flex;
+    text-shadow:rgb(255, 255, 255) 1px 1px;
+    background-color: bisque;
+    grid-area: header;
+    
+    border: solid black 5px;
+    
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    align-items: center;
+    justify-content:center;
+}
+
+
+.sideItem{
+    
+    display: flex;
+    height:110px;
+   
+
+    border: solid rgb(0, 0, 0) 5px;
+    text-shadow:rgb(255, 255, 255) 1px 1px;
+    background-color: bisque;
+    justify-content:center;
+    align-items: center;
+    cursor: pointer; 
+}
+
